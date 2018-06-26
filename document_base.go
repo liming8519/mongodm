@@ -558,7 +558,7 @@ func (self *DocumentBase) Save() error {
 
 	var err error
 
-	now := time.Now()
+	now := time.Now().UTC()
 
 	/*
 	 *	Check if Object ID is already set.
